@@ -7,6 +7,19 @@
   <title>Harvest the Cortex | Beta Playtest</title>
 
   <style>
+
+    /* =========================
+       CUSTOM HARVEST FONT
+       ========================= */
+
+    @font-face {
+      font-family: "Morven";
+      src: url("Morven.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -47,12 +60,21 @@
       margin-bottom: 25px;
     }
 
+    /* =========================
+       HARVEST THE CORTEX TITLE
+       ========================= */
+
     h1 {
+      font-family: "Morven", Georgia, serif;
       font-size: clamp(45px, 8vw, 100px);
       line-height: .9;
-      text-transform: uppercase;
+
+      /* Keep the title lowercase */
+      text-transform: lowercase;
+
       letter-spacing: 3px;
       color: #eee6dc;
+
       text-shadow:
         0 0 20px rgba(150, 0, 0, .35),
         0 5px 0 #160303;
@@ -74,6 +96,7 @@
     .version {
       color: #625b56;
       margin-bottom: 35px;
+      letter-spacing: 2px;
     }
 
     .button {
@@ -157,6 +180,47 @@
       margin-top: 25px;
     }
 
+    /* =========================
+       DOWNLOAD OPTIONS
+       ========================= */
+
+    .download-options {
+      margin-top: 25px;
+    }
+
+    .download-platform {
+      background: linear-gradient(145deg, #111, #080808);
+      border: 1px solid #2d2723;
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    .download-platform h3 {
+      color: #ddd4cb;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .download-platform p {
+      margin-bottom: 12px;
+    }
+
+    /* Android controller warning */
+
+    .android-warning {
+      margin-top: 15px;
+      padding: 15px;
+      background: #160606;
+      border-left: 3px solid #a62c2c;
+      color: #d9a3a3;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
+
     footer {
       text-align: center;
       padding: 50px 20px;
@@ -165,19 +229,25 @@
       font-size: 13px;
       letter-spacing: 2px;
     }
+
   </style>
 </head>
+
 
 <body>
 
 <header>
+
   <div class="hero">
 
-    <div class="eyebrow">Official Beta Playtest</div>
+    <div class="eyebrow">
+      Official Beta Playtest
+    </div>
 
+    <!-- Morven title -->
     <h1>
-      Harvest
-      <span>the Cortex</span>
+      harvest
+      <span>the cortex</span>
     </h1>
 
     <p class="subtitle">
@@ -186,7 +256,7 @@
     </p>
 
     <div class="version">
-      BETA PLAYTEST • WINDOWS
+      BETA PLAYTEST • WINDOWS • ANDROID
     </div>
 
     <a class="button" href="#download">
@@ -198,10 +268,16 @@
     </a>
 
   </div>
+
 </header>
 
 
 <main>
+
+
+<!-- =========================
+     DOWNLOAD SECTION
+     ========================= -->
 
 <section id="download">
 
@@ -217,14 +293,65 @@
     Bugs, balancing issues and unfinished elements may be encountered.
   </div>
 
-  <br>
 
-  <a class="button" href="#">
-    Windows Download — Coming Soon
-  </a>
+  <div class="download-options">
+
+
+    <!-- WINDOWS -->
+
+    <div class="download-platform">
+
+      <h3>Windows</h3>
+
+      <p>
+        Recommended version of the Harvest the Cortex Beta Playtest.
+      </p>
+
+      <a class="button"
+         href="https://mega.nz/file/WBtlkK6R#0psxgCB1C7Jh89nKbnVZY3gu3A7uzC0240TaGfG-uPQ"
+         target="_blank"
+         rel="noopener noreferrer">
+        Download Beta for Windows
+      </a>
+
+    </div>
+
+
+    <!-- ANDROID -->
+
+    <div class="download-platform">
+
+      <h3>Android</h3>
+
+      <p>
+        Experimental Android version of the Harvest the Cortex Demo.
+      </p>
+
+      <a class="button"
+         href="https://mega.nz/file/7dc22CpQ#WZyIiZFFLhnyjhw70qG2nyCS17OTMVFua7szFE0yvD8"
+         target="_blank"
+         rel="noopener noreferrer">
+        Download Android Demo (.APK)
+      </a>
+
+      <div class="android-warning">
+        ⚠ Controller required.<br>
+        The Android Demo is currently playable only with a connected controller.
+        Touchscreen controls are not supported.
+      </div>
+
+    </div>
+
+
+  </div>
 
 </section>
 
+
+
+<!-- =========================
+     CONTROLS
+     ========================= -->
 
 <section>
 
@@ -233,34 +360,62 @@
   <div class="panel-grid">
 
     <div class="panel">
+
       <h3>Movement</h3>
-      <p><span class="key">W A S D</span><br>Move your character.</p>
+
+      <p>
+        <span class="key">W A S D</span>
+        <br>
+        Move your character.
+      </p>
+
     </div>
 
+
     <div class="panel">
+
       <h3>Interact</h3>
-      <p><span class="key">E</span><br>Interact with objects and the environment.</p>
+
+      <p>
+        <span class="key">E</span>
+        <br>
+        Interact with objects and the environment.
+      </p>
+
     </div>
 
+
     <div class="panel">
+
       <h3>Combat</h3>
+
       <p>
         Use your character's weapons and abilities to survive
         the creatures roaming the castle.
       </p>
+
     </div>
 
+
     <div class="panel">
+
       <h3>Controller</h3>
+
       <p>
         Controller support is available during the Beta Playtest.
       </p>
+
     </div>
 
   </div>
 
 </section>
 
+
+
+<!-- =========================
+     PLAYTEST MISSION
+     ========================= -->
 
 <section>
 
@@ -283,6 +438,11 @@
 </section>
 
 
+
+<!-- =========================
+     FEEDBACK
+     ========================= -->
+
 <section id="feedback">
 
   <h2>Playtest Feedback</h2>
@@ -301,20 +461,30 @@
 
   <br>
 
-  <a class="button" href="#">
-    Submit Playtest Feedback — Coming Soon
+  <a class="button"
+     href="https://mega.nz/file/TQ1knBZK#MnwlJRukeHtBAHS0XRPZNnexDscksOvGqaMxXOJFO9c"
+     target="_blank"
+     rel="noopener noreferrer">
+    Download Playtest Feedback Form
   </a>
 
 </section>
 
+
 </main>
 
 
+
 <footer>
+
   HARVEST THE CORTEX • BETA PLAYTEST
+
   <br><br>
+
   © 2026
+
 </footer>
+
 
 </body>
 </html>
