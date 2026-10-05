@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Harvest the Cortex | Beta Playtest</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top, #240606 0%, #090909 38%, #030303 100%);
+      color: #e8e0d5;
+      font-family: Georgia, "Times New Roman", serif;
+      min-height: 100vh;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #4c1111;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #8f2929;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(45px, 8vw, 100px);
+      line-height: .9;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #eee6dc;
+      text-shadow:
+        0 0 20px rgba(150, 0, 0, .35),
+        0 5px 0 #160303;
+    }
+
+    h1 span {
+      display: block;
+      color: #8c1818;
+    }
+
+    .subtitle {
+      margin: 30px auto 15px;
+      max-width: 650px;
+      color: #aaa19a;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .version {
+      color: #625b56;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 17px 30px;
+      margin: 8px;
+      border: 1px solid #7e2020;
+      color: #eee5dc;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: linear-gradient(#381010, #160606);
+      transition: .2s;
+    }
+
+    .button:hover {
+      background: #701919;
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px rgba(180, 20, 20, .25);
+    }
+
+    .secondary {
+      background: #0c0c0c;
+      border-color: #403a36;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 80px 25px;
+    }
+
+    section {
+      margin-bottom: 90px;
+    }
+
+    h2 {
+      color: #a62c2c;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 28px;
+      border-bottom: 1px solid #351010;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #bdb4ac;
+    }
+
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .panel {
+      background: linear-gradient(145deg, #111, #080808);
+      border: 1px solid #2d2723;
+      padding: 25px;
+      min-height: 150px;
+    }
+
+    .panel h3 {
+      color: #ddd4cb;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .key {
+      color: #b33131;
+      font-weight: bold;
+    }
+
+    .warning {
+      border-left: 3px solid #7e1a1a;
+      background: #100707;
+      padding: 20px;
+      margin-top: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      color: #514a45;
+      border-top: 1px solid #241010;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+
+    <div class="eyebrow">Official Beta Playtest</div>
+
+    <h1>
+      Harvest
+      <span>the Cortex</span>
+    </h1>
+
+    <p class="subtitle">
+      Enter the castle. Survive the invasion. Discover what should
+      have remained buried.
+    </p>
+
+    <div class="version">
+      BETA PLAYTEST • WINDOWS
+    </div>
+
+    <a class="button" href="#download">
+      Download Beta
+    </a>
+
+    <a class="button secondary" href="#feedback">
+      Submit Feedback
+    </a>
+
+  </div>
+</header>
+
+
+<main>
+
+<section id="download">
+
+  <h2>Beta Download</h2>
+
+  <p>
+    Thank you for participating in the Harvest the Cortex Beta Playtest.
+    This build is provided for testing and feedback purposes.
+  </p>
+
+  <div class="warning">
+    The game is currently in active development.
+    Bugs, balancing issues and unfinished elements may be encountered.
+  </div>
+
+  <br>
+
+  <a class="button" href="#">
+    Windows Download — Coming Soon
+  </a>
+
+</section>
+
+
+<section>
+
+  <h2>Controls</h2>
+
+  <div class="panel-grid">
+
+    <div class="panel">
+      <h3>Movement</h3>
+      <p><span class="key">W A S D</span><br>Move your character.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Interact</h3>
+      <p><span class="key">E</span><br>Interact with objects and the environment.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Combat</h3>
+      <p>
+        Use your character's weapons and abilities to survive
+        the creatures roaming the castle.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Controller</h3>
+      <p>
+        Controller support is available during the Beta Playtest.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <h2>Your Mission</h2>
+
+  <p>
+    Play naturally. Explore the castle. Fight. Die. Experiment.
+    Try things that you don't think you're supposed to do.
+  </p>
+
+  <br>
+
+  <p>
+    We are especially interested in progression problems,
+    collision issues, combat balancing, enemy behaviour,
+    controller problems, visual bugs and anything that prevents
+    you from continuing the game.
+  </p>
+
+</section>
+
+
+<section id="feedback">
+
+  <h2>Playtest Feedback</h2>
+
+  <p>
+    Finished playing? Found something horrifying that wasn't
+    intentionally horrifying?
+  </p>
+
+  <br>
+
+  <p>
+    Your feedback directly helps shape the next build of
+    Harvest the Cortex.
+  </p>
+
+  <br>
+
+  <a class="button" href="#">
+    Submit Playtest Feedback — Coming Soon
+  </a>
+
+</section>
+
+</main>
+
+
+<footer>
+  HARVEST THE CORTEX • BETA PLAYTEST
+  <br><br>
+  © 2026
+</footer>
+
+</body>
+</html>
