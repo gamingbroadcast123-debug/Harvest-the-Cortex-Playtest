@@ -1,0 +1,8 @@
+{
+  "name": "harvest-the-cortex-beta-playtest",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  },
+  "previews": {}
+}
